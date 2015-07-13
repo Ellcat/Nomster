@@ -1,6 +1,23 @@
 
+body {
+	background: url('/assets/concrete_seamless.png');
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+}
 
+.navbar.navbar-inverse {
+	background: url('/assets/footer_lodyas.png');
+	border-radius: 0;
+	box-shadow: 0px 1px 3px #2a2a2a;
+
+}
+
+.navbar-inverse .navbar-brand {
+	color: #E21755;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
 /*CSS created box class that combines box style from mashable.com. connects with places.index.html.erb*/
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
