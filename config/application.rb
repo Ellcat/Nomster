@@ -21,7 +21,8 @@ module Nomster
     # config.i18n.default_locale = :de
 
     # Add fonts path
-    config.assets.paths << "#{Rails.root}"app/assets/fonts"
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+    
 
     config.assets.precompile += %w( .svg .eot .woff .ttf)
   end

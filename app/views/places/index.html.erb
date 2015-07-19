@@ -1,6 +1,9 @@
 
 <!-- ruby code that writes on screen looks at varible -->
 <!-- <h1> <%= @places.inspect %></h1 -->
+
+<%= paginate @places %>
+
 <% @places.each do |place| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= place.name %></h1>
