@@ -6,7 +6,8 @@ gem 'rails', '4.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-
+gem "figaro", ">= 1.0.0"
+gem "geocoder"
 gem 'sprockets', '<= 2.11.0'
 gem 'devise', '>= 3.2.4'
 #For pagination
