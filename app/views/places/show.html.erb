@@ -51,16 +51,12 @@
 
 <div class="clear"></div>
 
-    <%= simple_form_for @comment, :url => place_comments_path(@place) do |f| %>
-  <%= f.input :message %>
-  <%= f.input :rating, :as => :select, :collection => Comment::RATINGS %>
-  <%= f.submit "Add a Comment", :class => 'btn btn-primary' %>
-<% end %>
+    
 
-<!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add a comment
-</button>
+<!-- <!-- Button trigger modal -->
+<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+ --> <!--  Add a comment -->
+<!-- </button> --> -->
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -96,8 +92,10 @@
 </div>
 <div class="clear"></div>
 
+<br/><br/>
 
-<h1>Comments</h1>
+
+<!-- <h1>Comments</h1> -->
 
 <% @place.comments.each do |comment| %>
   <div class="col-xs-12 col-sm-6">
