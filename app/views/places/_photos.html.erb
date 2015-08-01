@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="panel-heading text-center">
+			
+		<% photos.each do |photo| %>
+		<%= image_tag photo.picture %>
+        <%= photo.caption %>
+		<% end %>
+		
+		</div
+
+	</div>
+
+</div>

@@ -48,8 +48,8 @@ ActiveRecord::Schema.define(version: 20150726165244) do
 
   create_table "photos", force: true do |t|
     t.text     "caption"
-    t.text     "place_id"
-    t.text     "user_id"
+    t.integer  "place_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "picture"

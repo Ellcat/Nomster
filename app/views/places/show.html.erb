@@ -1,5 +1,7 @@
 
 <div class="booyah-box col-xs-10 col-xs-offset-1">
+
+   <%= render partial: 'photos', locals:{photos: @place.photos} %>
 	<h1> <%= @place.name %> </h1>
 
 	<i><%= @place.address %></i>
@@ -104,12 +106,8 @@
 
 <br/><br/>
 
-<%= simple_form_for @photos, :url => place_photo_path(@photos) do |f| %>
-  <%= f.input :picture %>
-  <%= f.input :caption %>
-  <%= f.submit "Add a photo.", :class => 'btn btn-primary' %>
-<% end %>
 
+<%= render partial: 'photos', locals:{photos: @place.photos} %>
 
 
 <!-- <h1>Comments</h1> -->

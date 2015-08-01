@@ -25,10 +25,11 @@ end
 	def show
 		@place = Place.find(params[:id])
 		@comment = Comment.new
-		@photos = Photo.new
+		
 	end
 
 	def edit
+		@photo = Photo.new
 		@place =Place.find(params[:id])
 		 if @place.user != current_user
     return render :text => 'Not Allowed', :status => :forbidden
