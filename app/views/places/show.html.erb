@@ -6,6 +6,8 @@
 	<br/><br/>
 	<p><%= @place.description %></p>
 
+
+
 <style>
        #map-canvas {
         height: 300px;
@@ -84,15 +86,30 @@
 
 <div class="col-xs-10 col-xs-offset-1">
 <h1 class="pull-left">Comments</h1>
-<!-- Button trigger modal -->
+<!-- Button trigg<!--er modal -->
 <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
   Add a comment
 </button>
 
-</div>
-<div class="clear"></div>
+ </div>
+ --><div class="clear"></div>
+
+<%= simple_form_for @comment, :url => '#' do |f| %>
+  
+
+  <%= f.input :message %>
+  <%= f.input :rating %>
+  <%= f.submit "Add a Comment", :class => 'btn btn-primary' %>
+<% end %>
 
 <br/><br/>
+
+<%= simple_form_for @photos, :url => place_photo_path(@photos) do |f| %>
+  <%= f.input :picture %>
+  <%= f.input :caption %>
+  <%= f.submit "Add a photo.", :class => 'btn btn-primary' %>
+<% end %>
+
 
 
 <!-- <h1>Comments</h1> -->
