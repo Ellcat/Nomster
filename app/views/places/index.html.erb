@@ -9,6 +9,7 @@
 
    <%= render partial: 'photos', locals:{photos: place.photos} %>
 
+
     <h1><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br />
     <p><%= place.description %></p><br />
@@ -29,9 +30,11 @@
       <small><%= place.comments.last.user.email %></small>
     </blockquote>
   </div>
+  </div>
+  </div>
+<% end %>
 <% end %>
 
-  </div>
+
 
   
-<% end %>
