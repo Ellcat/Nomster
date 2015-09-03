@@ -9,3 +9,6 @@ class CreatePlaces < ActiveRecord::Migration
     end
   end
 end
+
+
+rails generate migration add_address_to_stores stores:address

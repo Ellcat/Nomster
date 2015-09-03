@@ -10,6 +10,10 @@ gem "figaro", ">= 1.0.0"
 gem "geocoder"
 gem 'sprockets', '<= 2.11.0'
 gem 'devise', '>= 3.2.4'
+
+#For testing
+gem "factory_girl_rails", "~> 4.0"
+
 #For pagination
 
 gem 'kaminari'
